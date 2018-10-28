@@ -140,16 +140,21 @@
              (keywords-re (regexp-opt keywords 'symbols))
              (symbols-re (regexp-opt symbols))
              (types-re (regexp-opt types 'symbols))
-             (nonterm-re "\\(?:\\_<[A-Z][[:word:]_]*\\_>'*\\)"))
-        `((,builtins-re . font-lock-builtin-face)
+             (nonterm-re "\\(?:\\_<[A-Z][[:word:]_]*\\_>'*\\)")
+             (comment-re "\\(?:(\\*.*\\*)\\)"))
+        `((,comment-re . font-lock-comment-face)
+          (,builtins-re . font-lock-builtin-face)
           (,keywords-re . font-lock-keyword-face)
           (,symbols-re . font-lock-variable-name-face)
           (,types-re . font-lock-type-face)
-          (,nonterm-re . font-lock-function-name-face))))
+          (,nonterm-re . font-lock-function-name-face)
+          (,comment-re . font-lock-comment-face))))
 
-(define-derived-mode makam-mode fundamental-mode "Makam"
+(define-derived-mode makam-mode prog-mode "Makam"
   "Major mode for editing makam files"
 
-  (setq font-lock-defaults '((makam-font-lock-keywords))))
+  (set (make-local-variable 'font-lock-defaults) '((makam-font-lock-keywords)))
+  (set (make-local-variable 'comment-start) "(*")
+  (set (make-local-variable 'comment-end) "*)"))
 
 (provide 'makam)
