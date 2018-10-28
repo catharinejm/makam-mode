@@ -141,14 +141,15 @@
              (symbols-re (regexp-opt symbols))
              (types-re (regexp-opt types 'symbols))
              (nonterm-re "\\(?:\\_<[A-Z][[:word:]_]*\\_>'*\\)")
-             (comment-re "\\(?:(\\*\\(?:\\*[^)]\\|[^*]\\)*\\*)\\)"))
+             (comment-re "\\(?:(\\*\\(?:\\*[^)]\\|[^*]\\)*\\*)\\)")
+             (directive-re "\\(?:%[[:word:]_]+\\_>\\)"))
         `((,comment-re . font-lock-comment-face)
+          (,directive-re . font-lock-preprocessor-face)
           (,builtins-re . font-lock-builtin-face)
           (,keywords-re . font-lock-keyword-face)
           (,symbols-re . font-lock-variable-name-face)
           (,types-re . font-lock-type-face)
-          (,nonterm-re . font-lock-function-name-face)
-          (,comment-re . font-lock-comment-face))))
+          (,nonterm-re . font-lock-function-name-face))))
 
 (define-derived-mode makam-mode prog-mode "Makam"
   "Major mode for editing makam files"
