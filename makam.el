@@ -141,7 +141,7 @@
              (symbols-re (regexp-opt symbols))
              (types-re (regexp-opt types 'symbols))
              (nonterm-re "\\(?:\\_<[A-Z][[:word:]_]*\\_>'*\\)")
-             (comment-re "\\(?:(\\*.*\\*)\\)"))
+             (comment-re "\\(?:(\\*\\(?:\\*[^)]\\|[^*]\\)*\\*)\\)"))
         `((,comment-re . font-lock-comment-face)
           (,builtins-re . font-lock-builtin-face)
           (,keywords-re . font-lock-keyword-face)
