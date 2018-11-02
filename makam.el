@@ -129,8 +129,8 @@
              (keywords '("type" "fun" "prop" "if" "then" "else"))
              (symbols '(":-" "->" "=>" ":" "::" "*" "." "," "?"))
              (types '("args" "bindmany" "bindone" "bool" "clause" "cmd" "concrete" "concrete.name"
-                      "concrete.names" "dyn" "expansion" "fluid" "forall" "hlist" "iso" "isos" "list"
-                      "log.level" "makam.typ_reified" "map" "option" "peg.peg" "peg.peg_args"
+                      "concrete.names" "dyn" "expansion" "fluid" "forall" "hlist" "int" "iso" "isos"
+                      "list" "log.level" "makam.typ_reified" "map" "option" "peg.peg" "peg.peg_args"
                       "peg.peg_captured" "peg.peg_list" "peg.peg_list_open" "pretty.pretty"
                       "pretty.pretty_args" "pretty.pretty_captured" "prop" "reified" "reified_args"
                       "reified_unif" "set" "string" "syntax" "syntax.syntax_args"
