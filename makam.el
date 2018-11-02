@@ -127,7 +127,7 @@
                          "vector.assumemany" "vector.map" "verbose_run_tests" "whenclause" "withall"
                          "without_eqv_refl" "zip"))
              (keywords '("type" "fun" "prop" "if" "then" "else"))
-             (symbols '(":-" "->" "=>" ":" "::" "*" "." "," "?"))
+             (symbols '(":-" "<-" "->" "=>" ":" "::" "*" "." "," "?"))
              (types '("args" "bindmany" "bindone" "bool" "clause" "cmd" "concrete" "concrete.name"
                       "concrete.names" "dyn" "expansion" "fluid" "forall" "hlist" "int" "iso" "isos"
                       "list" "log.level" "makam.typ_reified" "map" "option" "peg.peg" "peg.peg_args"
