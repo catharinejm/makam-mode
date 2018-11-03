@@ -126,7 +126,7 @@
                          "vbindmany.body" "vbindmany.open" "vbindmany.pair" "vbindmany.varnames"
                          "vector.assumemany" "vector.map" "verbose_run_tests" "whenclause" "withall"
                          "without_eqv_refl" "zip"))
-             (keywords '("type" "fun" "prop" "if" "then" "else"))
+             (keywords '("type" "fun" "pfun" "prop" "if" "then" "else"))
              (symbols '(":-" "<-" "->" "=>" ":" "::" "*" "." "," "?"))
              (types '("args" "bindmany" "bindone" "bool" "clause" "cmd" "concrete" "concrete.name"
                       "concrete.names" "dyn" "expansion" "fluid" "forall" "hlist" "int" "iso" "isos"
@@ -134,8 +134,8 @@
                       "peg.peg_captured" "peg.peg_list" "peg.peg_list_open" "pretty.pretty"
                       "pretty.pretty_args" "pretty.pretty_captured" "prop" "reified" "reified_args"
                       "reified_unif" "set" "string" "syntax" "syntax.syntax_args"
-                      "syntax.syntax_captured" "syntax_syntax.syndef" "tuple" "unit" "vbindmany"
-                      "vector"))
+                      "syntax.syntax_captured" "syntax_syntax.syndef" "testsuite" "tuple" "unit"
+                      "vbindmany" "vector"))
              (builtins-re (regexp-opt builtins 'symbols))
              (keywords-re (regexp-opt keywords 'symbols))
              (symbols-re (regexp-opt symbols))
