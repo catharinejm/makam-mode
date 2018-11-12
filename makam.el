@@ -126,7 +126,7 @@
                          "vbindmany.body" "vbindmany.open" "vbindmany.pair" "vbindmany.varnames"
                          "vector.assumemany" "vector.map" "verbose_run_tests" "whenclause" "withall"
                          "without_eqv_refl" "zip"))
-             (keywords '("type" "fun" "pfun" "prop" "if" "then" "else"))
+             (keywords '("type" "fun" "pfun" "prop" "if" "then" "else" "when"))
              (symbols '(":-" "<-" "->" "=>" ":" "::" "*" "." "," "?"))
              (types '("args" "bindmany" "bindone" "bool" "clause" "cmd" "concrete" "concrete.name"
                       "concrete.names" "dyn" "expansion" "fluid" "forall" "hlist" "int" "iso" "isos"
